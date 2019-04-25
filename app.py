@@ -4,11 +4,11 @@ import dash_html_components as html
 import plotly.graph_objs as go
 
 ########### Set up the chart
-beers=['Tusker', 'White Cap', 'Balozi', 'Pilsner']
+beers=['P5', 'P2', 'Y500', 'Y250']
 
 bitterness = go.Bar(
     x=beers,
-    y=[35, 60, 85, 75],
+    y=[3500, 6000, 8500, 7500],
     name='IBU',
     marker={'color':'red'}
 )
