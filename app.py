@@ -12,7 +12,7 @@ levels = go.Bar(
     name='Daily sales',
     marker={'color':'green'}
 )
-alcohol = go.Bar(
+product = go.Bar(
     x=sales,
     y=[100, 200, 200, 150],
     name='returns',
