@@ -4,23 +4,23 @@ import dash_html_components as html
 import plotly.graph_objs as go
 
 ########### Set up the chart
-beers=['P5', 'P2', 'Y500', 'Y250']
+sales=['P5', 'P2', 'Y500', 'Y250']
 
 levels = go.Bar(
     x=sales,
     y=[3500, 6000, 8500, 7500],
-    name='IBU',
-    marker={'color':'red'}
+    name='Daily sales',
+    marker={'color':'green'}
 )
 alcohol = go.Bar(
     x=sales,
-    y=[5.4, 7.1, 9.2, 4.3],
-    name='ABV',
+    y=[100, 200, 200, 150],
+    name='returns',
     marker={'color':'blue'}
 )
 
-beer_data = [bitterness, alcohol]
-beer_layout = go.Layout(
+sales_data = [returns, product]
+sales_layout = go.Layout(
     barmode='group',
     title = 'Daily Sales'
 )
